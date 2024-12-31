@@ -1,3 +1,7 @@
-export default function Footer(){
-    return <div className="py-4 bg-secondary text-center text-white">&copy; GV PortFolio 2024</div>
+export default function Footer() {
+    return (
+        <footer className="py-4 bg-secondary text-center text-white">
+            <p>&copy; {new Date().getFullYear()} GV Portfolio</p>
+        </footer>
+    );
 }
