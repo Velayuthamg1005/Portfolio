@@ -2,7 +2,7 @@ import ResumeImg from '../assets/resume.jpg';
 
 export default function Resume () {
     const config = {
-        link: 'https://pdflink.to/gvresume/'
+        link: 'https://pdflink.to/652b6007/'
     }
 
     return (
