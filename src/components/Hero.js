@@ -10,17 +10,23 @@ export default function Hero() {
         }
     }
 
-
-    return <section className='flex flex-col md:flex-row px-5 py-40 bg-primary justify-center'>
-       <div className='md:w-1/2 flex flex-col'>
-            <h1 className=' text-white text-6xl font-hero-font py-10'>Hii,This is <br/> <span className='text-black'>G</span> Velayutham
-                <p className='text-2xl py-5'>{config.subtitle}</p>
-            </h1>
-            <div className='flex py-2'>
-                <a href={config.social.Github} className='pr-5 hover:text-white'><AiOutlineGithub size={40} /></a>
-                <a href={config.social.linkedin} className='hover:text-white'><AiOutlineLinkedin size={40}/></a>
+    return (
+        <section className='flex flex-col md:flex-row px-5 py-40 bg-primary justify-center'>
+            <div className='md:w-1/2 flex flex-col'>
+                <h1 className=' text-white text-6xl font-hero-font py-10'>
+                    Hii, This is <br /> <span className='text-black'>G</span> Velayutham
+                    <p className='text-2xl py-5'>{config.subtitle}</p>
+                </h1>
+                <div className='flex py-2'>
+                    <a href={config.social.Github} className='pr-5 hover:text-white'>
+                        <AiOutlineGithub size={40} />
+                    </a>
+                    <a href={config.social.linkedin} className='hover:text-white'>
+                        <AiOutlineLinkedin size={40} />
+                    </a>
+                </div>
             </div>
-       </div>
-       <img className='md:w-1/3' src={HeroImg} />
-    </section>
+            <img className='md:w-1/3' src={HeroImg} alt="G Velayutham - Web Developer" /> {/* Added alt attribute */}
+        </section>
+    );
 }
